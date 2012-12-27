@@ -1,0 +1,3 @@
+NetSocket++: A library, that simplifies C++ network programming with UNIX Sockets written in the OOP methodology.
+
+Works only on UNIX Sockets!
