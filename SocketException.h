@@ -7,6 +7,9 @@
 /// \version 0.1
 #include <exception>
 #include <string>
+/// \namespace NetSocket
+/// \brief A namespace for all library names
+namespace NetSocket {
 /// \class SocketException
 /// \brief A class representing an exception with socket classes
 class SocketException: public std::exception {
@@ -19,4 +22,5 @@ public:
 	const char* what() const throw(); ///< \brief A function, that returns error message, as needed by std::exception.
 	///< \return Error message.	
 };
+}
 #endif

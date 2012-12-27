@@ -27,19 +27,25 @@ addrinfo *p;
 for(p = _servinfo; p != NULL; p = p->ai_next) {
 	_descriptor = socket(p->ai_family, p->ai_socktype, p->ai_protocol);
 	if(_descriptor == -1) {
-	throw NetworkException("socket", "Could not create the socket");	
-	}
-	setsockopt(_descriptor, SOL_SOCKET, SO_REUSEADDR, &_yes, sizeof(int));
-	int bindret = bind(_descriptor, p->ai_addr, p->ai_addrlen);
-	if(bindret == -1) {
 	continue;	
 	}
 	break;
 }
 if(p == NULL) {
-throw NetworkException("bind", strerror(errno));	
+throw NetworkException("socket", strerror(errno));	
 }
 inet_ntop(p->ai_family, get_in_addr((struct sockaddr *)p->ai_addr), _caddr, sizeof(_caddr));
+_servinfo = p;
+if(protocol = "TCP") {
+setsockopt(_descriptor, SOL_SOCKET, SO_REUSEADDR, &_yes, sizeof(int));
+int bindret = bind(_descriptor, _servinfo->ai_addr, _servinfo->ai_addrlen);
+if(bindret == -1) {
+throw NetworkException("bind", strerror(errno));	
+}	
+}
+_protocol = protocol;
+_host = host;
+_service = service;
 }
 
 std::string NetSocket::getIP() {
