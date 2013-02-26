@@ -1,3 +1,22 @@
 NetSocket++: A library, that simplifies C++ network programming with UNIX Sockets written in the OOP methodology.
-
-Works only on UNIX Sockets!
+================================================================================================================
+Code examples in "tests" directory.
+Documentation in "doxy" directory: PDF - doxy/latex/refman.pdf, HTML - doxy/html/index.html
+================================================================================================================
+INSTALLATION
+make - generates the shared object library.
+make install - installs the library in the system (/usr/lib and /usr/include)
+make test - compiles code in "tests" directory, works only after installation
+make debugtest - as above, with debugging symbols
+================================================================================================================
+USAGE (ONLY after installation)
+#include "NetSocket++/NetSocketPP.h" in source files
+-lnetsocketpp in compiler command line
+================================================================================================================
+HELP
+Refer to the documentation or contact me at phitherek [at] gmail [dot] com
+================================================================================================================
+NOTICE: This library was tested ONLY on UNIX sockets! There is no port on Windows and other platforms
+and I am not planning to do one!
+================================================================================================================
+Have fun!
