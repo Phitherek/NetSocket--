@@ -3,12 +3,13 @@
 #include "NetSocket.h"
 #include "NetworkException.h"
 #include "SocketException.h"
-using namespace NetSocket;
+using namespace NetSocketPP;
 
-NetSocket::NetSocket(std::string host = NULL, std::string service, std::string protocol) {
+NetSocket::NetSocket(std::string host, std::string service, std::string protocol) {
 _yes=1;
 memset(&_hints, 0, sizeof(_hints));
 _hints.ai_family = AF_UNSPEC;
+_addr_size = sizeof(_their_addr);
 if(protocol == "TCP") {
 _hints.ai_socktype = SOCK_STREAM;
 } else if(protocol == "UDP") {
@@ -36,12 +37,8 @@ throw NetworkException("socket", strerror(errno));
 }
 inet_ntop(p->ai_family, get_in_addr((struct sockaddr *)p->ai_addr), _caddr, sizeof(_caddr));
 _servinfo = p;
-if(protocol = "TCP") {
+if(protocol == "TCP") {
 setsockopt(_descriptor, SOL_SOCKET, SO_REUSEADDR, &_yes, sizeof(int));
-int bindret = bind(_descriptor, _servinfo->ai_addr, _servinfo->ai_addrlen);
-if(bindret == -1) {
-throw NetworkException("bind", strerror(errno));	
-}	
 }
 _protocol = protocol;
 _host = host;

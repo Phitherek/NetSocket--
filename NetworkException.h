@@ -7,9 +7,9 @@
 /// \version 0.1
 #include <exception>
 #include <string>
-/// \namespace NetSocket
+/// \namespace NetSocketPP
 /// \brief A namespace for all library names
-namespace NetSocket {
+namespace NetSocketPP {
 /// \class NetworkException
 /// \brief A class representing an exception with network.
 class NetworkException: public std::exception {

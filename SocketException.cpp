@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include "SocketException.h"
-using namespace NetSocket;
+using namespace NetSocketPP;
 
 SocketException::SocketException(std::string msg) {
 _msg = msg;	
@@ -13,7 +13,7 @@ _msg = "";
 
 const char* SocketException::what() const throw() {
 std::string str = "";
-str += "Failure occured in NetSocket++: ";
+str += "Error occured in NetSocket++: ";
 str += _msg;
 return str.c_str();
 }

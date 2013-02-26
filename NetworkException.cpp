@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include "NetworkException.h"
-using namespace NetSocket;
+using namespace NetSocketPP;
 
 NetworkException::NetworkException(std::string cmd, std::string msg) {
 	_cmd = cmd;
