@@ -19,25 +19,12 @@ while(waitpid(-1, NULL, WNOHANG) > 0);
 /// \namespace NetSocketPP
 /// \brief A namespace for all library names
 namespace NetSocketPP {
-/// \class LoopCondition
-/// \brief A class controlling main server loop.
-class ServerLoopCondition {
-private:
-bool _cond;
-public:
-ServerLoopCondition(bool state); ///< \brief A constructor with parameter.
-///< \param state Initial state of the condition.
-bool operator()(); ///< \brief An operator() returning boolean value controlling the loop.
-///< \return Boolean for controlling the loop.
-void setState(bool state); ///< \brief A function, that sets the condition state.
-///< \param state A condition state.
-};
 /// \class ServerFunctionArgs
 /// \brief A class for storing server function arguments.
 class ServerFunctionArgs {
 private:
 	std::string* _tab;
-	int _size;
+	unsigned int _size;
 public:
 ServerFunctionArgs(); ///< A constructor.
 ServerFunctionArgs(ServerFunctionArgs& sfa); ///< \brief A copy constructor.
@@ -45,10 +32,10 @@ ServerFunctionArgs(ServerFunctionArgs& sfa); ///< \brief A copy constructor.
 ~ServerFunctionArgs(); ///< A destructor.
 void addArgument(std::string arg); ///< \brief Function adding an argument to the list.
 ///< \param arg An argument to be added, of type std::string.
-std::string getArgument(int idx); ///< \brief Function returning the argument of given index number.
+std::string getArgument(unsigned int idx); ///< \brief Function returning the argument of given index number.
 ///< \param idx Index of the argument.
 ///< \return The argument.
-std::string operator[](int idx); ///< \brief Operator[] returning the argument of given index number.
+std::string operator[](unsigned int idx); ///< \brief Operator[] returning the argument of given index number.
 ///< \param idx Index of the argument.
 ///< \return The argument.
 };
@@ -65,11 +52,12 @@ ServerSocket(std::string host, std::string service, std::string protocol); ///< 
 ///< \param service Port or service that socket should be connected with.
 ///< \param protocol Socket protocol, TCP or UDP.
 ~ServerSocket(); ///< A destructor.
-void startServer(ServerFunctionArgs functionOutput ,ServerFunctionArgs (*serverMain)(ServerFunctionArgs, ServerLoopCondition&, ServerSocket*), ServerFunctionArgs functionInput, ServerLoopCondition condition, int connectionLimit); ///< \brief A function that starts TCP server.
+void startServer(ServerFunctionArgs& functionOutput ,ServerFunctionArgs& (*serverMain)(ServerFunctionArgs, ServerSocket*), ServerFunctionArgs functionInput, bool infinite, unsigned int iternum, int connectionLimit); ///< \brief A function that starts TCP server.
 ///< \param functionOutput A ServerFunctionArgs object that will store server function result.
 ///< \param serverMain An user-defined function, that returns ServerFunctionArgs object - results of the server function with arguments: ServerFunctionArgs object - arguments to the server function, reference to ServerLoopCondition object - an object controlling the main server loop, pointer to ServerSocket object - for passing socket information in that order.
 ///< \param functionInput A ServerFunctionArgs object with server function arguments.
-///< \param condition A ServerLoopCondition object set to proper value.
+///< \param infinite Determines if server loop should be infinite.
+///< \param iternum Number of accept() iterations for non-infinite loops.
 ///< \param connectionLimit Maximum number of accepted connections.
 int send(std::string msg, int flags=0); ///< \brief A function that sends data through the socket.
 ///< \param msg A message/data to send, of type std::string.

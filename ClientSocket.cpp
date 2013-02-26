@@ -10,6 +10,11 @@ conret = connect(_descriptor, _servinfo->ai_addr, _servinfo->ai_addrlen);
 if(conret == -1) {
 throw NetworkException("connect", strerror(errno));
 }
+} else if(protocol == "UDP") {
+int bindret = bind(_descriptor, _servinfo->ai_addr, _servinfo->ai_addrlen);
+	if(bindret == 1) {
+		throw NetworkException("bind", strerror(errno));
+	}	
 }
 }
 

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib>
-#include "../NetSocketPP.h"
+#include "NetSocket++/NetSocketPP.h"
 using namespace std;
 
 int main() {

@@ -3,18 +3,6 @@
 #include <cstdlib>
 using namespace NetSocketPP;
 
-ServerLoopCondition::ServerLoopCondition(bool state) {
-_cond = state;	
-}
-
-void ServerLoopCondition::setState(bool state) {
-_cond = state;	
-}
-
-bool ServerLoopCondition::operator()() {
-return _cond;	
-}
-
 ServerFunctionArgs::ServerFunctionArgs() {
 _tab = NULL;
 _size = 0;
@@ -27,7 +15,7 @@ _size = 0;
 } else {
 _size = sfa._size;
 _tab = new std::string[_size];
-for(int i = 0; i < _size; i++) {
+for(unsigned int i = 0; i < _size; i++) {
 _tab[i] = sfa._tab[i];
 }
 }
@@ -42,10 +30,10 @@ _tab = NULL;
 }
 
 void ServerFunctionArgs::addArgument(std::string arg) {
-int newSize = _size+1;
+unsigned int newSize = _size+1;
 std::string* newTab = NULL;
 newTab = new std::string[newSize];
-for(int i = 0; i < _size; i++) {
+for(unsigned int i = 0; i < _size; i++) {
 newTab[i] = _tab[i];	
 }
 newTab[newSize-1] = arg;
@@ -54,31 +42,29 @@ delete[] _tab;
 _tab = newTab;
 }
 
-std::string ServerFunctionArgs::getArgument(int idx) {
-if(idx < 0 or idx >= _size) {
+std::string ServerFunctionArgs::getArgument(unsigned int idx) {
+if(idx >= _size) {
 throw SocketException("Index out of bounds!");
 } else {
 return _tab[idx];
 }	
 }
 
-std::string ServerFunctionArgs::operator[](int idx) {
+std::string ServerFunctionArgs::operator[](unsigned int idx) {
 return getArgument(idx);	
 }
 
 ServerSocket::ServerSocket(std::string host, std::string service, std::string protocol): NetSocket(host, service, protocol) {
-if(protocol == "TCP") {
 	int bindret = bind(_descriptor, _servinfo->ai_addr, _servinfo->ai_addrlen);
 	if(bindret == 1) {
 		throw NetworkException("bind", strerror(errno));
 	}
 }
-}
 ServerSocket::~ServerSocket() {
 close(_newDescriptor);	
 }
 
-void ServerSocket::startServer(ServerFunctionArgs functionOutput ,ServerFunctionArgs (*serverMain)(ServerFunctionArgs, ServerLoopCondition&, ServerSocket*), ServerFunctionArgs functionInput, ServerLoopCondition condition, int connectionLimit) {
+void ServerSocket::startServer(ServerFunctionArgs& functionOutput ,ServerFunctionArgs& (*serverMain)(ServerFunctionArgs, ServerSocket*), ServerFunctionArgs functionInput, bool infinite, unsigned int iternum, int connectionLimit) {
 	if(_protocol == "UDP") {
 	throw SocketException("startServer() works only with TCP! Use send() and recv() methods to transfer data via UDP!");	
 	}
@@ -92,21 +78,34 @@ void ServerSocket::startServer(ServerFunctionArgs functionOutput ,ServerFunction
 	if(sigaction(SIGCHLD, &_sa, NULL) == -1) {
 	throw SocketException("Sigaction failed!");	
 	}
-	while(condition()) {
+	if(infinite == true) {
+	while(true) {
 	_newDescriptor = accept(_descriptor, (sockaddr*)&_their_addr, &_addr_size);
 	if(_newDescriptor == -1) {
 	throw NetworkException("accept", strerror(errno));	
 	}
 	if(!fork()) {
 	close(_descriptor);
-	functionOutput = serverMain(functionInput, condition, this);	
+	functionOutput = serverMain(functionInput, this);	
 	}
+	}
+	} else {
+	for(unsigned int i = 0; i < iternum; i++) {
+	_newDescriptor = accept(_descriptor, (sockaddr*)&_their_addr, &_addr_size);
+	if(_newDescriptor == -1) {
+	throw NetworkException("accept", strerror(errno));	
+	}
+	if(!fork()) {
+	close(_descriptor);
+	functionOutput = serverMain(functionInput, this);	
+	}
+	}	
 	}
 }
 
 int ServerSocket::send(std::string msg, int flags) {
 	if(_protocol == "TCP") {
-		int sr = ::send(_descriptor, msg.c_str(), msg.length(), flags);
+		int sr = ::send(_newDescriptor, msg.c_str(), msg.length(), flags);
 		if(sr == -1) {
 		throw NetworkException("send", strerror(errno));	
 		}
@@ -123,7 +122,7 @@ int ServerSocket::send(std::string msg, int flags) {
 
 int ServerSocket::recv(int flags) {
 	if(_protocol == "TCP") {
-		int rr = ::recv(_descriptor, _buf, 99999, flags);
+		int rr = ::recv(_newDescriptor, _buf, 99999, flags);
 		if(rr == -1) {
 		throw NetworkException("recv", strerror(errno));	
 		} else if(rr == 0) {

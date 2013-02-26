@@ -43,21 +43,23 @@ _content = "";
 void HTTPReply::parse() {
 	std::string action = "firstline";
 	std::string parsed = "";
+	std::string scl = "";
 	bool postspace = false;
 	for(unsigned int i = 0; i < _raw.length(); i++) {
 	if(action == "firstline") {
-	if(_raw[i] == ' ') {
-	_protocol = parsed;
-	parsed = "";
-	postspace = true;
-	} else if(postspace == true) {
-	if(_raw[i] == '\n') {
+	if(postspace == true) {
+	if(_raw[i] == '\r') {
 	_response = parsed;
 	parsed = "";
-	action = "reqparse";	
+	action = "reqparse";
+	i++;
 	} else {
-	parsed += _raw[i];	
+	parsed += _raw[i];
 	}
+	} else if(_raw[i] == ' ') {
+	_protocol = parsed;
+	parsed = "";
+	postspace = true;	
 	} else {
 	parsed += _raw[i];	
 	}
@@ -76,29 +78,32 @@ void HTTPReply::parse() {
 		action = "ct";	
 		}
 		parsed = "";
-		} else if(_raw[i] == '\n') {
-		if(_raw[i+1] == '\n') {
+		} else if(_raw[i] == '\r') {
+		if(_raw[i-2] == '\r') {
 		action = "content";
 		}
+		i++;
 		parsed = "";
 		} else {
 		parsed += _raw[i];	
 		}
 	} else if(action == "timestamp") {
-		if(_raw[i] == '\n') {
+		if(_raw[i] == '\r') {
+		i++;
 		action = "reqparse";
 		} else {
 		_timestamp += _raw[i];	
 		}
 	} else if(action == "server") {
-		if(_raw[i] == '\n') {
+		if(_raw[i] == '\r') {
+		i++;
 		action = "reqparse";
 		} else {
 		_server += _raw[i];	
 		}
 	} else if(action == "cl") {
-		std::string scl = "";
-		if(_raw[i] == '\n') {
+		if(_raw[i] == '\r') {
+		i++;
 		for(unsigned int j = 0; j < scl.length(); j++) {
 		if(!isdigit(scl[j])) {
 		throw SocketException("Content-Length is not a number!");	
@@ -110,14 +115,16 @@ void HTTPReply::parse() {
 	} else {
 	scl += _raw[i];
 	}
-} else if(action == "connection") {
-	if(_raw[i] == '\n') {
+} else if(action == "conn") {
+	if(_raw[i] == '\r') {
+		i++;
 		action = "reqparse";
 		} else {
 		_connection += _raw[i];	
 		}
 } else if(action == "ct") {
-	if(_raw[i] == '\n') {
+	if(_raw[i] == '\r') {
+		i++;
 		action = "reqparse";
 		} else {
 		_ct += _raw[i];	
@@ -179,7 +186,7 @@ HTTPClientSocket::HTTPClientSocket(std::string host = NULL, std::string service 
 	_request += "Host: ";
 	_request += host;	
 	}
-	_request += "\n";
+	_request += "\n\n";
 	send(_request, 0);
 	recv(0);
 	std::string rawreply;
