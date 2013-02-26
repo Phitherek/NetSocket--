@@ -1,0 +1,202 @@
+\begin{theindex}
+
+  \item {add\discretionary {-}{}{}Argument}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Server\discretionary {-}{}{}Function\discretionary {-}{}{}Args}, 
+		\hyperpage{20}
+  \item {add\discretionary {-}{}{}To\discretionary {-}{}{}Content}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{15}
+
+  \indexspace
+
+  \item {C\discretionary {-}{}{}Str\discretionary {-}{}{}To\discretionary {-}{}{}String}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P}, 
+		\hyperpage{10}
+  \item {Client\discretionary {-}{}{}Socket}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Client\discretionary {-}{}{}Socket}, 
+		\hyperpage{12}
+  \item {Client\discretionary {-}{}{}Socket.\discretionary {-}{}{}h}, 
+		\hyperpage{25}
+
+  \indexspace
+
+  \item {get}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Client\discretionary {-}{}{}Socket}, 
+		\hyperpage{12}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Server\discretionary {-}{}{}Socket}, 
+		\hyperpage{22}
+  \item {get\discretionary {-}{}{}Argument}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Server\discretionary {-}{}{}Function\discretionary {-}{}{}Args}, 
+		\hyperpage{20}
+  \item {get\discretionary {-}{}{}Connection}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{15}
+  \item {get\discretionary {-}{}{}Content}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{15}
+  \item {get\discretionary {-}{}{}Content\discretionary {-}{}{}Length}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{15}
+  \item {get\discretionary {-}{}{}Content\discretionary {-}{}{}Type}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{15}
+  \item {get\discretionary {-}{}{}Desc}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Net\discretionary {-}{}{}Socket}, 
+		\hyperpage{18}
+  \item {get\discretionary {-}{}{}I\discretionary {-}{}{}P}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Net\discretionary {-}{}{}Socket}, 
+		\hyperpage{18}
+  \item {get\discretionary {-}{}{}Protocol}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{15}
+  \item {get\discretionary {-}{}{}Raw}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{16}
+  \item {get\discretionary {-}{}{}Reply}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Client\discretionary {-}{}{}Socket}, 
+		\hyperpage{13}
+  \item {get\discretionary {-}{}{}Request}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Client\discretionary {-}{}{}Socket}, 
+		\hyperpage{13}
+  \item {get\discretionary {-}{}{}Response}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{16}
+  \item {get\discretionary {-}{}{}Server}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{16}
+  \item {get\discretionary {-}{}{}Timestamp}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Client\discretionary {-}{}{}Socket}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Client\discretionary {-}{}{}Socket}, 
+		\hyperpage{13}
+  \item {H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Client\discretionary {-}{}{}Socket.\discretionary {-}{}{}h}, 
+		\hyperpage{25}
+  \item {H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{15}
+
+  \indexspace
+
+  \item {Net\discretionary {-}{}{}Socket}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Net\discretionary {-}{}{}Socket}, 
+		\hyperpage{18}
+  \item {Net\discretionary {-}{}{}Socket.\discretionary {-}{}{}h}, 
+		\hyperpage{26}
+  \item {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P}, 
+		\hyperpage{9}
+    \subitem {C\discretionary {-}{}{}Str\discretionary {-}{}{}To\discretionary {-}{}{}String}, 
+		\hyperpage{10}
+  \item {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P.\discretionary {-}{}{}h}, 
+		\hyperpage{27}
+  \item {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Client\discretionary {-}{}{}Socket}, 
+		\hyperpage{11}
+    \subitem {Client\discretionary {-}{}{}Socket}, \hyperpage{12}
+    \subitem {get}, \hyperpage{12}
+    \subitem {recv}, \hyperpage{12}
+    \subitem {send}, \hyperpage{12}
+  \item {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Client\discretionary {-}{}{}Socket}, 
+		\hyperpage{13}
+    \subitem {get\discretionary {-}{}{}Reply}, \hyperpage{13}
+    \subitem {get\discretionary {-}{}{}Request}, \hyperpage{13}
+    \subitem {H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Client\discretionary {-}{}{}Socket}, 
+		\hyperpage{13}
+  \item {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{14}
+    \subitem {add\discretionary {-}{}{}To\discretionary {-}{}{}Content}, 
+		\hyperpage{15}
+    \subitem {get\discretionary {-}{}{}Connection}, \hyperpage{15}
+    \subitem {get\discretionary {-}{}{}Content}, \hyperpage{15}
+    \subitem {get\discretionary {-}{}{}Content\discretionary {-}{}{}Length}, 
+		\hyperpage{15}
+    \subitem {get\discretionary {-}{}{}Content\discretionary {-}{}{}Type}, 
+		\hyperpage{15}
+    \subitem {get\discretionary {-}{}{}Protocol}, \hyperpage{15}
+    \subitem {get\discretionary {-}{}{}Raw}, \hyperpage{16}
+    \subitem {get\discretionary {-}{}{}Response}, \hyperpage{16}
+    \subitem {get\discretionary {-}{}{}Server}, \hyperpage{16}
+    \subitem {get\discretionary {-}{}{}Timestamp}, \hyperpage{16}
+    \subitem {H\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}P\discretionary {-}{}{}Reply}, 
+		\hyperpage{15}
+  \item {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Net\discretionary {-}{}{}Socket}, 
+		\hyperpage{16}
+    \subitem {get\discretionary {-}{}{}Desc}, \hyperpage{18}
+    \subitem {get\discretionary {-}{}{}I\discretionary {-}{}{}P}, 
+		\hyperpage{18}
+    \subitem {Net\discretionary {-}{}{}Socket}, \hyperpage{18}
+  \item {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Network\discretionary {-}{}{}Exception}, 
+		\hyperpage{18}
+    \subitem {Network\discretionary {-}{}{}Exception}, \hyperpage{19}
+    \subitem {what}, \hyperpage{19}
+  \item {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Server\discretionary {-}{}{}Function\discretionary {-}{}{}Args}, 
+		\hyperpage{19}
+    \subitem {add\discretionary {-}{}{}Argument}, \hyperpage{20}
+    \subitem {get\discretionary {-}{}{}Argument}, \hyperpage{20}
+    \subitem {Server\discretionary {-}{}{}Function\discretionary {-}{}{}Args}, 
+		\hyperpage{20}
+  \item {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Server\discretionary {-}{}{}Socket}, 
+		\hyperpage{21}
+    \subitem {get}, \hyperpage{22}
+    \subitem {recv}, \hyperpage{22}
+    \subitem {send}, \hyperpage{22}
+    \subitem {Server\discretionary {-}{}{}Socket}, \hyperpage{21}
+    \subitem {start\discretionary {-}{}{}Server}, \hyperpage{22}
+  \item {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Socket\discretionary {-}{}{}Exception}, 
+		\hyperpage{23}
+    \subitem {Socket\discretionary {-}{}{}Exception}, \hyperpage{23}
+    \subitem {what}, \hyperpage{23}
+  \item {Network\discretionary {-}{}{}Exception}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Network\discretionary {-}{}{}Exception}, 
+		\hyperpage{19}
+  \item {Network\discretionary {-}{}{}Exception.\discretionary {-}{}{}h}, 
+		\hyperpage{28}
+
+  \indexspace
+
+  \item {recv}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Client\discretionary {-}{}{}Socket}, 
+		\hyperpage{12}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Server\discretionary {-}{}{}Socket}, 
+		\hyperpage{22}
+
+  \indexspace
+
+  \item {send}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Client\discretionary {-}{}{}Socket}, 
+		\hyperpage{12}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Server\discretionary {-}{}{}Socket}, 
+		\hyperpage{22}
+  \item {Server\discretionary {-}{}{}Function\discretionary {-}{}{}Args}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Server\discretionary {-}{}{}Function\discretionary {-}{}{}Args}, 
+		\hyperpage{20}
+  \item {Server\discretionary {-}{}{}Socket}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Server\discretionary {-}{}{}Socket}, 
+		\hyperpage{21}
+  \item {Server\discretionary {-}{}{}Socket.\discretionary {-}{}{}h}, 
+		\hyperpage{28}
+    \subitem {sigchld\discretionary {-}{}{}\_\discretionary {-}{}{}handler}, 
+		\hyperpage{29}
+  \item {sigchld\discretionary {-}{}{}\_\discretionary {-}{}{}handler}
+    \subitem {Server\discretionary {-}{}{}Socket.\discretionary {-}{}{}h}, 
+		\hyperpage{29}
+  \item {Socket\discretionary {-}{}{}Exception}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Socket\discretionary {-}{}{}Exception}, 
+		\hyperpage{23}
+  \item {Socket\discretionary {-}{}{}Exception.\discretionary {-}{}{}h}, 
+		\hyperpage{29}
+  \item {start\discretionary {-}{}{}Server}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Server\discretionary {-}{}{}Socket}, 
+		\hyperpage{22}
+
+  \indexspace
+
+  \item {what}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Network\discretionary {-}{}{}Exception}, 
+		\hyperpage{19}
+    \subitem {Net\discretionary {-}{}{}Socket\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}::\discretionary {-}{}{}Socket\discretionary {-}{}{}Exception}, 
+		\hyperpage{23}
+
+\end{theindex}

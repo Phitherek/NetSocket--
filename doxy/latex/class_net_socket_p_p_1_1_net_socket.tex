@@ -1,0 +1,137 @@
+\hypertarget{class_net_socket_p_p_1_1_net_socket}{\section{Net\-Socket\-P\-P\-:\-:Net\-Socket Class Reference}
+\label{class_net_socket_p_p_1_1_net_socket}\index{Net\-Socket\-P\-P\-::\-Net\-Socket@{Net\-Socket\-P\-P\-::\-Net\-Socket}}
+}
+
+
+A class, that represents network connection -\/ socket.  
+
+
+
+
+{\ttfamily \#include $<$Net\-Socket.\-h$>$}
+
+Inheritance diagram for Net\-Socket\-P\-P\-:\-:Net\-Socket\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_net_socket_p_p_1_1_net_socket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_net_socket_p_p_1_1_net_socket_abae69a67be7881bbb2fdf605fdd145e5}{Net\-Socket} (std\-::string host, std\-::string service, std\-::string protocol)
+\begin{DoxyCompactList}\small\item\em A constructor with parameters, that creates a socket. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_net_socket_p_p_1_1_net_socket_a3e44de8e02caba69d0763bf7e42c9972}{get\-I\-P} ()
+\begin{DoxyCompactList}\small\item\em A function that returns I\-P of a host. \end{DoxyCompactList}\item 
+int \hyperlink{class_net_socket_p_p_1_1_net_socket_a932cf37dd25b45aeb9d07439f3fae5a5}{get\-Desc} ()
+\begin{DoxyCompactList}\small\item\em A function that returns socket descriptor. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a3ebe4e1d8db6978255f48e1034d638a4}{\hyperlink{class_net_socket_p_p_1_1_net_socket_a3ebe4e1d8db6978255f48e1034d638a4}{$\sim$\-Net\-Socket} ()}\label{class_net_socket_p_p_1_1_net_socket_a3ebe4e1d8db6978255f48e1034d638a4}
+
+\begin{DoxyCompactList}\small\item\em A destructor, that frees the memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a240ac4d2e384549b5757a79d0e2146bf}{void $\ast$ \hyperlink{class_net_socket_p_p_1_1_net_socket_a240ac4d2e384549b5757a79d0e2146bf}{get\-\_\-in\-\_\-addr} (sockaddr $\ast$sa)}\label{class_net_socket_p_p_1_1_net_socket_a240ac4d2e384549b5757a79d0e2146bf}
+
+\begin{DoxyCompactList}\small\item\em Needed for implementation purposes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_aae1d9340cd9bacb68f789a86e4d2fe45}{int \hyperlink{class_net_socket_p_p_1_1_net_socket_aae1d9340cd9bacb68f789a86e4d2fe45}{\-\_\-descriptor}}\label{class_net_socket_p_p_1_1_net_socket_aae1d9340cd9bacb68f789a86e4d2fe45}
+
+\begin{DoxyCompactList}\small\item\em Socket descriptor. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a4bbe227dc4bd377397ea684d0d6a501a}{int \hyperlink{class_net_socket_p_p_1_1_net_socket_a4bbe227dc4bd377397ea684d0d6a501a}{\-\_\-yes}}\label{class_net_socket_p_p_1_1_net_socket_a4bbe227dc4bd377397ea684d0d6a501a}
+
+\begin{DoxyCompactList}\small\item\em Needed for implementation purposes. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a3ca9404bfc910697ce6a40afdb2a5d8d}{int \hyperlink{class_net_socket_p_p_1_1_net_socket_a3ca9404bfc910697ce6a40afdb2a5d8d}{\-\_\-status}}\label{class_net_socket_p_p_1_1_net_socket_a3ca9404bfc910697ce6a40afdb2a5d8d}
+
+\begin{DoxyCompactList}\small\item\em Needed for implementation purposes. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a412939af9ba30f042f13621592c59c9f}{char \hyperlink{class_net_socket_p_p_1_1_net_socket_a412939af9ba30f042f13621592c59c9f}{\-\_\-caddr} \mbox{[}I\-N\-E\-T6\-\_\-\-A\-D\-D\-R\-S\-T\-R\-L\-E\-N\mbox{]}}\label{class_net_socket_p_p_1_1_net_socket_a412939af9ba30f042f13621592c59c9f}
+
+\begin{DoxyCompactList}\small\item\em A structure that stores I\-P address. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a51849e8e7d23aa11c9b09eb526656ad1}{addrinfo \hyperlink{class_net_socket_p_p_1_1_net_socket_a51849e8e7d23aa11c9b09eb526656ad1}{\-\_\-hints}}\label{class_net_socket_p_p_1_1_net_socket_a51849e8e7d23aa11c9b09eb526656ad1}
+
+\begin{DoxyCompactList}\small\item\em Needed for implementation purposes. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a000735c5be93aefd3297cd2eb3e55ec0}{addrinfo $\ast$ \hyperlink{class_net_socket_p_p_1_1_net_socket_a000735c5be93aefd3297cd2eb3e55ec0}{\-\_\-servinfo}}\label{class_net_socket_p_p_1_1_net_socket_a000735c5be93aefd3297cd2eb3e55ec0}
+
+\begin{DoxyCompactList}\small\item\em Needed for implementation purposes. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_aa608f4ab4af1be3c36831f4c0dd386cf}{sockaddr\-\_\-storage \hyperlink{class_net_socket_p_p_1_1_net_socket_aa608f4ab4af1be3c36831f4c0dd386cf}{\-\_\-their\-\_\-addr}}\label{class_net_socket_p_p_1_1_net_socket_aa608f4ab4af1be3c36831f4c0dd386cf}
+
+\begin{DoxyCompactList}\small\item\em Needed for implementation purposes. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a8a19d20260ef37d1adbb7439a55b2b6a}{socklen\-\_\-t \hyperlink{class_net_socket_p_p_1_1_net_socket_a8a19d20260ef37d1adbb7439a55b2b6a}{\-\_\-addr\-\_\-size}}\label{class_net_socket_p_p_1_1_net_socket_a8a19d20260ef37d1adbb7439a55b2b6a}
+
+\begin{DoxyCompactList}\small\item\em Needed for implementation purposes. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_ad22749418d441f69226894af0f8467c5}{std\-::string \hyperlink{class_net_socket_p_p_1_1_net_socket_ad22749418d441f69226894af0f8467c5}{\-\_\-host}}\label{class_net_socket_p_p_1_1_net_socket_ad22749418d441f69226894af0f8467c5}
+
+\begin{DoxyCompactList}\small\item\em A host to which a socket is connecting to/on which a server socket is opened. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a2db5c2f404edb3282384529e19ebe173}{std\-::string \hyperlink{class_net_socket_p_p_1_1_net_socket_a2db5c2f404edb3282384529e19ebe173}{\-\_\-service}}\label{class_net_socket_p_p_1_1_net_socket_a2db5c2f404edb3282384529e19ebe173}
+
+\begin{DoxyCompactList}\small\item\em A port or a string identyfing service that socket is connecting to/which server is being opened. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a69be87c77c9cdd187ec59e071cbbd431}{std\-::string \hyperlink{class_net_socket_p_p_1_1_net_socket_a69be87c77c9cdd187ec59e071cbbd431}{\-\_\-protocol}}\label{class_net_socket_p_p_1_1_net_socket_a69be87c77c9cdd187ec59e071cbbd431}
+
+\begin{DoxyCompactList}\small\item\em A protocol of the socket\-: T\-C\-P/\-U\-D\-P. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class, that represents network connection -\/ socket. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_net_socket_p_p_1_1_net_socket_abae69a67be7881bbb2fdf605fdd145e5}{\index{Net\-Socket\-P\-P\-::\-Net\-Socket@{Net\-Socket\-P\-P\-::\-Net\-Socket}!Net\-Socket@{Net\-Socket}}
+\index{Net\-Socket@{Net\-Socket}!NetSocketPP::NetSocket@{Net\-Socket\-P\-P\-::\-Net\-Socket}}
+\subsubsection[{Net\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}Net\-Socket\-::\-Net\-Socket (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{host, }
+\item[{std\-::string}]{service, }
+\item[{std\-::string}]{protocol}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_net_socket_abae69a67be7881bbb2fdf605fdd145e5}
+
+
+A constructor with parameters, that creates a socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & A hostname or I\-P address of socket destination. \\
+\hline
+{\em service} & A port or service identifier, where socket is to be opened. \\
+\hline
+{\em protocol} & A protocol of the socket, T\-C\-P or U\-D\-P. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a932cf37dd25b45aeb9d07439f3fae5a5}{\index{Net\-Socket\-P\-P\-::\-Net\-Socket@{Net\-Socket\-P\-P\-::\-Net\-Socket}!get\-Desc@{get\-Desc}}
+\index{get\-Desc@{get\-Desc}!NetSocketPP::NetSocket@{Net\-Socket\-P\-P\-::\-Net\-Socket}}
+\subsubsection[{get\-Desc}]{\setlength{\rightskip}{0pt plus 5cm}int Net\-Socket\-::get\-Desc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_net_socket_a932cf37dd25b45aeb9d07439f3fae5a5}
+
+
+A function that returns socket descriptor. 
+
+\begin{DoxyReturn}{Returns}
+A socket descriptor. 
+\end{DoxyReturn}
+\hypertarget{class_net_socket_p_p_1_1_net_socket_a3e44de8e02caba69d0763bf7e42c9972}{\index{Net\-Socket\-P\-P\-::\-Net\-Socket@{Net\-Socket\-P\-P\-::\-Net\-Socket}!get\-I\-P@{get\-I\-P}}
+\index{get\-I\-P@{get\-I\-P}!NetSocketPP::NetSocket@{Net\-Socket\-P\-P\-::\-Net\-Socket}}
+\subsubsection[{get\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Net\-Socket\-::get\-I\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_net_socket_a3e44de8e02caba69d0763bf7e42c9972}
+
+
+A function that returns I\-P of a host. 
+
+\begin{DoxyReturn}{Returns}
+I\-P address of a host as std\-::string. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_net_socket_8h}{Net\-Socket.\-h}\item 
+Net\-Socket.\-cpp\end{DoxyCompactItemize}

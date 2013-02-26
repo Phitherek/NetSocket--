@@ -1,0 +1,128 @@
+\hypertarget{class_net_socket_p_p_1_1_client_socket}{\section{Net\-Socket\-P\-P\-:\-:Client\-Socket Class Reference}
+\label{class_net_socket_p_p_1_1_client_socket}\index{Net\-Socket\-P\-P\-::\-Client\-Socket@{Net\-Socket\-P\-P\-::\-Client\-Socket}}
+}
+
+
+An implementation of a client socket. Inherits from \hyperlink{class_net_socket_p_p_1_1_net_socket}{Net\-Socket}.  
+
+
+
+
+{\ttfamily \#include $<$Client\-Socket.\-h$>$}
+
+Inheritance diagram for Net\-Socket\-P\-P\-:\-:Client\-Socket\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_net_socket_p_p_1_1_client_socket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_net_socket_p_p_1_1_client_socket_a18798784dff930fd46bf9d89c021425f}{Client\-Socket} (std\-::string host, std\-::string service, std\-::string protocol)
+\begin{DoxyCompactList}\small\item\em A constructor with parameters, that creates and connects the socket. \end{DoxyCompactList}\item 
+int \hyperlink{class_net_socket_p_p_1_1_client_socket_a1317645d6afb05c46abbb3b62e75c86a}{send} (std\-::string msg, int flags)
+\begin{DoxyCompactList}\small\item\em A function, that sends data through the socket. \end{DoxyCompactList}\item 
+int \hyperlink{class_net_socket_p_p_1_1_client_socket_aa2761de701972e2dbda39919d83c9467}{recv} (int flags)
+\begin{DoxyCompactList}\small\item\em A function, that receives data through the socket. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_net_socket_p_p_1_1_client_socket_ae32fa1faac049522fd1f1f7760936370}{get} ()
+\begin{DoxyCompactList}\small\item\em A function returning recently recv-\/d data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_net_socket_p_p_1_1_client_socket_a8b1405dc86b43d907a6a37d859a3eae9}{char \hyperlink{class_net_socket_p_p_1_1_client_socket_a8b1405dc86b43d907a6a37d859a3eae9}{buf} \mbox{[}100000\mbox{]}}\label{class_net_socket_p_p_1_1_client_socket_a8b1405dc86b43d907a6a37d859a3eae9}
+
+\begin{DoxyCompactList}\small\item\em A large buffer for data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An implementation of a client socket. Inherits from \hyperlink{class_net_socket_p_p_1_1_net_socket}{Net\-Socket}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_net_socket_p_p_1_1_client_socket_a18798784dff930fd46bf9d89c021425f}{\index{Net\-Socket\-P\-P\-::\-Client\-Socket@{Net\-Socket\-P\-P\-::\-Client\-Socket}!Client\-Socket@{Client\-Socket}}
+\index{Client\-Socket@{Client\-Socket}!NetSocketPP::ClientSocket@{Net\-Socket\-P\-P\-::\-Client\-Socket}}
+\subsubsection[{Client\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}Client\-Socket\-::\-Client\-Socket (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{host, }
+\item[{std\-::string}]{service, }
+\item[{std\-::string}]{protocol}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_client_socket_a18798784dff930fd46bf9d89c021425f}
+
+
+A constructor with parameters, that creates and connects the socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & A hostname or I\-P address of socket destination. \\
+\hline
+{\em service} & A port or service identifier, where socket is to be opened. \\
+\hline
+{\em protocol} & A protocol of the socket, T\-C\-P or U\-D\-P. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_net_socket_p_p_1_1_client_socket_ae32fa1faac049522fd1f1f7760936370}{\index{Net\-Socket\-P\-P\-::\-Client\-Socket@{Net\-Socket\-P\-P\-::\-Client\-Socket}!get@{get}}
+\index{get@{get}!NetSocketPP::ClientSocket@{Net\-Socket\-P\-P\-::\-Client\-Socket}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Client\-Socket\-::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_client_socket_ae32fa1faac049522fd1f1f7760936370}
+
+
+A function returning recently recv-\/d data. 
+
+\begin{DoxyReturn}{Returns}
+Received data as std\-::string. 
+\end{DoxyReturn}
+\hypertarget{class_net_socket_p_p_1_1_client_socket_aa2761de701972e2dbda39919d83c9467}{\index{Net\-Socket\-P\-P\-::\-Client\-Socket@{Net\-Socket\-P\-P\-::\-Client\-Socket}!recv@{recv}}
+\index{recv@{recv}!NetSocketPP::ClientSocket@{Net\-Socket\-P\-P\-::\-Client\-Socket}}
+\subsubsection[{recv}]{\setlength{\rightskip}{0pt plus 5cm}int Client\-Socket\-::recv (
+\begin{DoxyParamCaption}
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_client_socket_aa2761de701972e2dbda39919d83c9467}
+
+
+A function, that receives data through the socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & Socket flags, default 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes received. 
+\end{DoxyReturn}
+\hypertarget{class_net_socket_p_p_1_1_client_socket_a1317645d6afb05c46abbb3b62e75c86a}{\index{Net\-Socket\-P\-P\-::\-Client\-Socket@{Net\-Socket\-P\-P\-::\-Client\-Socket}!send@{send}}
+\index{send@{send}!NetSocketPP::ClientSocket@{Net\-Socket\-P\-P\-::\-Client\-Socket}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}int Client\-Socket\-::send (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{msg, }
+\item[{int}]{flags = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_client_socket_a1317645d6afb05c46abbb3b62e75c86a}
+
+
+A function, that sends data through the socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & A message to send. \\
+\hline
+{\em flags} & Socket flags, default 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes sent. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_client_socket_8h}{Client\-Socket.\-h}\item 
+Client\-Socket.\-cpp\end{DoxyCompactItemize}

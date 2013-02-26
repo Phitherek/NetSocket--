@@ -19,7 +19,7 @@ char buf[100000]; ///< A large buffer for data.
 public:
 	ClientSocket(std::string host, std::string service, std::string protocol); ///< \brief A constructor with parameters, that creates and connects the socket.
 	///< \param host A hostname or IP address of socket destination.
-	///< \param port A port or service identifier, where socket is to be opened.
+	///< \param service A port or service identifier, where socket is to be opened.
 	///< \param protocol A protocol of the socket, TCP or UDP.
 	int send(std::string msg, int flags); ///< \brief A function, that sends data through the socket.
 	///< \param msg A message to send.

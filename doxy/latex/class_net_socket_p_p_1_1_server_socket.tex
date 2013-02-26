@@ -1,0 +1,158 @@
+\hypertarget{class_net_socket_p_p_1_1_server_socket}{\section{Net\-Socket\-P\-P\-:\-:Server\-Socket Class Reference}
+\label{class_net_socket_p_p_1_1_server_socket}\index{Net\-Socket\-P\-P\-::\-Server\-Socket@{Net\-Socket\-P\-P\-::\-Server\-Socket}}
+}
+
+
+An implementation of the server socket.  
+
+
+
+
+{\ttfamily \#include $<$Server\-Socket.\-h$>$}
+
+Inheritance diagram for Net\-Socket\-P\-P\-:\-:Server\-Socket\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_net_socket_p_p_1_1_server_socket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_net_socket_p_p_1_1_server_socket_a79fb1d52a8dfedaa7f58f904d38d68c0}{Server\-Socket} (std\-::string host, std\-::string service, std\-::string protocol)
+\begin{DoxyCompactList}\small\item\em A constructor with parameters. \end{DoxyCompactList}\item 
+\hypertarget{class_net_socket_p_p_1_1_server_socket_a510674d924c2544e6b0069e39c36516b}{\hyperlink{class_net_socket_p_p_1_1_server_socket_a510674d924c2544e6b0069e39c36516b}{$\sim$\-Server\-Socket} ()}\label{class_net_socket_p_p_1_1_server_socket_a510674d924c2544e6b0069e39c36516b}
+
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_net_socket_p_p_1_1_server_socket_a51754d1c346300072a94f4b392a87d38}{start\-Server} (\hyperlink{class_net_socket_p_p_1_1_server_function_args}{Server\-Function\-Args} \&function\-Output, \hyperlink{class_net_socket_p_p_1_1_server_function_args}{Server\-Function\-Args} \&($\ast$server\-Main)(\hyperlink{class_net_socket_p_p_1_1_server_function_args}{Server\-Function\-Args}, \hyperlink{class_net_socket_p_p_1_1_server_socket}{Server\-Socket} $\ast$), \hyperlink{class_net_socket_p_p_1_1_server_function_args}{Server\-Function\-Args} function\-Input, bool infinite, unsigned int iternum, int connection\-Limit)
+\begin{DoxyCompactList}\small\item\em A function that starts T\-C\-P server. \end{DoxyCompactList}\item 
+int \hyperlink{class_net_socket_p_p_1_1_server_socket_a8bd2cc82d02a5997119b6abdc9d2f1a9}{send} (std\-::string msg, int flags=0)
+\begin{DoxyCompactList}\small\item\em A function that sends data through the socket. \end{DoxyCompactList}\item 
+int \hyperlink{class_net_socket_p_p_1_1_server_socket_a2e0203c59bfa247f0252e6e13064c6af}{recv} (int flags=0)
+\begin{DoxyCompactList}\small\item\em A function that receives data through the socket. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_net_socket_p_p_1_1_server_socket_a94e3eddcfdb2f04d8f30fb50006d0515}{get} ()
+\begin{DoxyCompactList}\small\item\em A function returning received data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An implementation of the server socket. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_net_socket_p_p_1_1_server_socket_a79fb1d52a8dfedaa7f58f904d38d68c0}{\index{Net\-Socket\-P\-P\-::\-Server\-Socket@{Net\-Socket\-P\-P\-::\-Server\-Socket}!Server\-Socket@{Server\-Socket}}
+\index{Server\-Socket@{Server\-Socket}!NetSocketPP::ServerSocket@{Net\-Socket\-P\-P\-::\-Server\-Socket}}
+\subsubsection[{Server\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}Server\-Socket\-::\-Server\-Socket (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{host, }
+\item[{std\-::string}]{service, }
+\item[{std\-::string}]{protocol}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_server_socket_a79fb1d52a8dfedaa7f58f904d38d68c0}
+
+
+A constructor with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & A hostname or I\-P adress of socket destination, defaults to N\-U\-L\-L. \\
+\hline
+{\em service} & Port or service that socket should be connected with. \\
+\hline
+{\em protocol} & Socket protocol, T\-C\-P or U\-D\-P. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_net_socket_p_p_1_1_server_socket_a94e3eddcfdb2f04d8f30fb50006d0515}{\index{Net\-Socket\-P\-P\-::\-Server\-Socket@{Net\-Socket\-P\-P\-::\-Server\-Socket}!get@{get}}
+\index{get@{get}!NetSocketPP::ServerSocket@{Net\-Socket\-P\-P\-::\-Server\-Socket}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Server\-Socket\-::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_server_socket_a94e3eddcfdb2f04d8f30fb50006d0515}
+
+
+A function returning received data. 
+
+\begin{DoxyReturn}{Returns}
+Received data as string. 
+\end{DoxyReturn}
+\hypertarget{class_net_socket_p_p_1_1_server_socket_a2e0203c59bfa247f0252e6e13064c6af}{\index{Net\-Socket\-P\-P\-::\-Server\-Socket@{Net\-Socket\-P\-P\-::\-Server\-Socket}!recv@{recv}}
+\index{recv@{recv}!NetSocketPP::ServerSocket@{Net\-Socket\-P\-P\-::\-Server\-Socket}}
+\subsubsection[{recv}]{\setlength{\rightskip}{0pt plus 5cm}int Server\-Socket\-::recv (
+\begin{DoxyParamCaption}
+\item[{int}]{flags = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_server_socket_a2e0203c59bfa247f0252e6e13064c6af}
+
+
+A function that receives data through the socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & Receive flags, defaulting to 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes received. 
+\end{DoxyReturn}
+\hypertarget{class_net_socket_p_p_1_1_server_socket_a8bd2cc82d02a5997119b6abdc9d2f1a9}{\index{Net\-Socket\-P\-P\-::\-Server\-Socket@{Net\-Socket\-P\-P\-::\-Server\-Socket}!send@{send}}
+\index{send@{send}!NetSocketPP::ServerSocket@{Net\-Socket\-P\-P\-::\-Server\-Socket}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}int Server\-Socket\-::send (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{msg, }
+\item[{int}]{flags = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_server_socket_a8bd2cc82d02a5997119b6abdc9d2f1a9}
+
+
+A function that sends data through the socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & A message/data to send, of type std\-::string. \\
+\hline
+{\em flags} & Send flags, defaulting to 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes sent. 
+\end{DoxyReturn}
+\hypertarget{class_net_socket_p_p_1_1_server_socket_a51754d1c346300072a94f4b392a87d38}{\index{Net\-Socket\-P\-P\-::\-Server\-Socket@{Net\-Socket\-P\-P\-::\-Server\-Socket}!start\-Server@{start\-Server}}
+\index{start\-Server@{start\-Server}!NetSocketPP::ServerSocket@{Net\-Socket\-P\-P\-::\-Server\-Socket}}
+\subsubsection[{start\-Server}]{\setlength{\rightskip}{0pt plus 5cm}void Server\-Socket\-::start\-Server (
+\begin{DoxyParamCaption}
+\item[{{\bf Server\-Function\-Args} \&}]{function\-Output, }
+\item[{{\bf Server\-Function\-Args} \&($\ast$)({\bf Server\-Function\-Args}, {\bf Server\-Socket} $\ast$)}]{server\-Main, }
+\item[{{\bf Server\-Function\-Args}}]{function\-Input, }
+\item[{bool}]{infinite, }
+\item[{unsigned int}]{iternum, }
+\item[{int}]{connection\-Limit}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_server_socket_a51754d1c346300072a94f4b392a87d38}
+
+
+A function that starts T\-C\-P server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\-Output} & A \hyperlink{class_net_socket_p_p_1_1_server_function_args}{Server\-Function\-Args} object that will store server function result. \\
+\hline
+{\em server\-Main} & An user-\/defined function, that returns \hyperlink{class_net_socket_p_p_1_1_server_function_args}{Server\-Function\-Args} object -\/ results of the server function with arguments\-: \hyperlink{class_net_socket_p_p_1_1_server_function_args}{Server\-Function\-Args} object -\/ arguments to the server function and pointer to \hyperlink{class_net_socket_p_p_1_1_server_socket}{Server\-Socket} object -\/ for passing socket information in that order. \\
+\hline
+{\em function\-Input} & A \hyperlink{class_net_socket_p_p_1_1_server_function_args}{Server\-Function\-Args} object with server function arguments. \\
+\hline
+{\em infinite} & Determines if server loop should be infinite. \\
+\hline
+{\em iternum} & Number of accept() iterations for non-\/infinite loops. \\
+\hline
+{\em connection\-Limit} & Maximum number of accepted connections. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_server_socket_8h}{Server\-Socket.\-h}\item 
+Server\-Socket.\-cpp\end{DoxyCompactItemize}

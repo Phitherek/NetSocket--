@@ -1,0 +1,93 @@
+\hypertarget{class_net_socket_p_p_1_1_h_t_t_p_client_socket}{\section{Net\-Socket\-P\-P\-:\-:H\-T\-T\-P\-Client\-Socket Class Reference}
+\label{class_net_socket_p_p_1_1_h_t_t_p_client_socket}\index{Net\-Socket\-P\-P\-::\-H\-T\-T\-P\-Client\-Socket@{Net\-Socket\-P\-P\-::\-H\-T\-T\-P\-Client\-Socket}}
+}
+
+
+A class representing H\-T\-T\-P client socket.  
+
+
+
+
+{\ttfamily \#include $<$H\-T\-T\-P\-Client\-Socket.\-h$>$}
+
+Inheritance diagram for Net\-Socket\-P\-P\-:\-:H\-T\-T\-P\-Client\-Socket\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_net_socket_p_p_1_1_h_t_t_p_client_socket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_net_socket_p_p_1_1_h_t_t_p_client_socket_a3512fce741550f229a63d8f6b0914261}{H\-T\-T\-P\-Client\-Socket} (std\-::string host, std\-::string service, std\-::string doc\-Request)
+\begin{DoxyCompactList}\small\item\em A constructor with parameters. \end{DoxyCompactList}\item 
+\hyperlink{class_net_socket_p_p_1_1_h_t_t_p_reply}{H\-T\-T\-P\-Reply} \hyperlink{class_net_socket_p_p_1_1_h_t_t_p_client_socket_a9693ffad07bdf7916a5dd227146c8bcf}{get\-Reply} ()
+\begin{DoxyCompactList}\small\item\em A function returning a \hyperlink{class_net_socket_p_p_1_1_h_t_t_p_reply}{H\-T\-T\-P\-Reply}. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_net_socket_p_p_1_1_h_t_t_p_client_socket_a710bdbe32e4cdb87b86aa2edd93a1015}{get\-Request} ()
+\begin{DoxyCompactList}\small\item\em A function returning the request used in the socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class representing H\-T\-T\-P client socket. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_net_socket_p_p_1_1_h_t_t_p_client_socket_a3512fce741550f229a63d8f6b0914261}{\index{Net\-Socket\-P\-P\-::\-H\-T\-T\-P\-Client\-Socket@{Net\-Socket\-P\-P\-::\-H\-T\-T\-P\-Client\-Socket}!H\-T\-T\-P\-Client\-Socket@{H\-T\-T\-P\-Client\-Socket}}
+\index{H\-T\-T\-P\-Client\-Socket@{H\-T\-T\-P\-Client\-Socket}!NetSocketPP::HTTPClientSocket@{Net\-Socket\-P\-P\-::\-H\-T\-T\-P\-Client\-Socket}}
+\subsubsection[{H\-T\-T\-P\-Client\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}H\-T\-T\-P\-Client\-Socket\-::\-H\-T\-T\-P\-Client\-Socket (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{host = {\ttfamily NULL}, }
+\item[{std\-::string}]{service = {\ttfamily \char`\"{}http\char`\"{}}, }
+\item[{std\-::string}]{doc\-Request = {\ttfamily \char`\"{}/\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_h_t_t_p_client_socket_a3512fce741550f229a63d8f6b0914261}
+
+
+A constructor with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & Hostname or I\-P of socket destination, defaults to N\-U\-L\-L. \\
+\hline
+{\em service} & Service port or identifier, defaults to H\-T\-T\-P. \\
+\hline
+{\em doc\-Request} & A document to request from the server, defaults to root/index (/). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_net_socket_p_p_1_1_h_t_t_p_client_socket_a9693ffad07bdf7916a5dd227146c8bcf}{\index{Net\-Socket\-P\-P\-::\-H\-T\-T\-P\-Client\-Socket@{Net\-Socket\-P\-P\-::\-H\-T\-T\-P\-Client\-Socket}!get\-Reply@{get\-Reply}}
+\index{get\-Reply@{get\-Reply}!NetSocketPP::HTTPClientSocket@{Net\-Socket\-P\-P\-::\-H\-T\-T\-P\-Client\-Socket}}
+\subsubsection[{get\-Reply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\-T\-T\-P\-Reply} H\-T\-T\-P\-Client\-Socket\-::get\-Reply (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_h_t_t_p_client_socket_a9693ffad07bdf7916a5dd227146c8bcf}
+
+
+A function returning a \hyperlink{class_net_socket_p_p_1_1_h_t_t_p_reply}{H\-T\-T\-P\-Reply}. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_net_socket_p_p_1_1_h_t_t_p_reply}{H\-T\-T\-P\-Reply} object containing received data. 
+\end{DoxyReturn}
+\hypertarget{class_net_socket_p_p_1_1_h_t_t_p_client_socket_a710bdbe32e4cdb87b86aa2edd93a1015}{\index{Net\-Socket\-P\-P\-::\-H\-T\-T\-P\-Client\-Socket@{Net\-Socket\-P\-P\-::\-H\-T\-T\-P\-Client\-Socket}!get\-Request@{get\-Request}}
+\index{get\-Request@{get\-Request}!NetSocketPP::HTTPClientSocket@{Net\-Socket\-P\-P\-::\-H\-T\-T\-P\-Client\-Socket}}
+\subsubsection[{get\-Request}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string H\-T\-T\-P\-Client\-Socket\-::get\-Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_net_socket_p_p_1_1_h_t_t_p_client_socket_a710bdbe32e4cdb87b86aa2edd93a1015}
+
+
+A function returning the request used in the socket. 
+
+\begin{DoxyReturn}{Returns}
+The H\-T\-T\-P request used to obtain data. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_h_t_t_p_client_socket_8h}{H\-T\-T\-P\-Client\-Socket.\-h}\item 
+H\-T\-T\-P\-Client\-Socket.\-cpp\end{DoxyCompactItemize}

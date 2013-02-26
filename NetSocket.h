@@ -19,7 +19,7 @@
 /// \namespace NetSocketPP
 /// \brief A namespace for all library names.
 namespace NetSocketPP {
-/// \fn CStrToString
+/// \fn CStrToString(char* cstr)
 /// \brief A function, that converts table of chars (a C-style string) into std::string
 /// \param cstr A C-style string to be converted.
 /// \return A std::string with the content of the input.
@@ -49,7 +49,7 @@ void *get_in_addr(sockaddr* sa); ///< Needed for implementation purposes.
 public:
 	NetSocket(std::string host, std::string service, std::string protocol); ///< \brief A constructor with parameters, that creates a socket.
 	///< \param host A hostname or IP address of socket destination.
-	///< \param port A port or service identifier, where socket is to be opened.
+	///< \param service A port or service identifier, where socket is to be opened.
 	///< \param protocol A protocol of the socket, TCP or UDP.
 	std::string getIP(); ///< \brief A function that returns IP of a host.
 	///< \return IP address of a host as std::string.

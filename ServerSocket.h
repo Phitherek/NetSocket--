@@ -9,7 +9,7 @@
 /// \date 2013
 /// \version 0.1
 
-/// \fn sigchld_handler
+/// \fn sigchld_handler(int s)
 /// \brief Signal handler, needed for implementation purposes
 /// \param s Needed for implementation purposes
 inline void sigchld_handler(int s) {
@@ -54,7 +54,7 @@ ServerSocket(std::string host, std::string service, std::string protocol); ///< 
 ~ServerSocket(); ///< A destructor.
 void startServer(ServerFunctionArgs& functionOutput ,ServerFunctionArgs& (*serverMain)(ServerFunctionArgs, ServerSocket*), ServerFunctionArgs functionInput, bool infinite, unsigned int iternum, int connectionLimit); ///< \brief A function that starts TCP server.
 ///< \param functionOutput A ServerFunctionArgs object that will store server function result.
-///< \param serverMain An user-defined function, that returns ServerFunctionArgs object - results of the server function with arguments: ServerFunctionArgs object - arguments to the server function, reference to ServerLoopCondition object - an object controlling the main server loop, pointer to ServerSocket object - for passing socket information in that order.
+///< \param serverMain An user-defined function, that returns ServerFunctionArgs object - results of the server function with arguments: ServerFunctionArgs object - arguments to the server function and pointer to ServerSocket object - for passing socket information in that order.
 ///< \param functionInput A ServerFunctionArgs object with server function arguments.
 ///< \param infinite Determines if server loop should be infinite.
 ///< \param iternum Number of accept() iterations for non-infinite loops.
