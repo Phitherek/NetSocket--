@@ -36,7 +36,7 @@ int ClientSocket::send(std::string msg, int flags=0) {
 }
 
 int ClientSocket::recv(int flags) {
-	memset(&_buf[0], 0, sizeof(_buf));
+	memset(&buf[0], 0, sizeof(buf));
 	if(_protocol == "TCP") {
 		int rr = ::recv(_descriptor, buf, 99999, flags);
 		if(rr == -1) {
