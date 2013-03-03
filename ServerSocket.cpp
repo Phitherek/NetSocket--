@@ -121,6 +121,7 @@ int ServerSocket::send(std::string msg, int flags) {
 }
 
 int ServerSocket::recv(int flags) {
+	memset(&_buf[0], 0, sizeof(_buf));
 	if(_protocol == "TCP") {
 		int rr = ::recv(_newDescriptor, _buf, 99999, flags);
 		if(rr == -1) {
